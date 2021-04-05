@@ -1,0 +1,61 @@
+<app-header></app-header>
+<div class="page-wrapper">
+  <!-- ============================================================== -->
+  <!-- Bread crumb and right sidebar toggle -->
+  <!-- ============================================================== -->
+  <div class="page-breadcrumb">
+      <div class="row">
+          <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">Elements</h4>
+              <div class="ms-auto text-end">
+                  <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Library</li>
+                      </ol>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Bread crumb and right sidebar toggle -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Container fluid  -->
+  <!-- ============================================================== -->
+  <div class="container">
+      <!-- ============================================================== -->
+      <!-- Start Page Content -->
+      <!-- ============================================================== -->
+      <div class="row">
+
+
+        <div class="col-md-8">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title mb-0">Form Elements</h5>
+                  <div class="form-group mt-3">
+                      <label>Category Name <small class="text-muted"></small></label>
+                      <input type="text" [(ngModel)]="category_name" class="form-control date-inputmask" id="date-mask"
+                          placeholder="Enter Category Name">
+                  </div>
+                  <div class="form-group">
+                      <label>Comment <small class="text-muted"></small></label>
+                      <input type="text" [(ngModel)]="comment" class="form-control phone-inputmask" id="phone-mask"
+                          >
+                  </div>
+                  <div class="form-group">
+                      <label>Image <small class="text-muted"></small></label>
+                      <input type="file" (change)="uploadFile($event)" class="form-control international-inputmask"
+                          id="international-mask" >
+                  </div>
+
+                  <div class="form-group">
+
+                    <button type="submit"  class="btn btn-primary" id="purchase-mask"
+                        value="submit" [disabled]="!image" (click)="insertdata()">submit</button>
+                </div>
+              </div>
+          </div>
+
