@@ -1,0 +1,69 @@
+<app-header></app-header>
+<div class="page-wrapper">
+  <!-- ============================================================== -->
+  <!-- Bread crumb and right sidebar toggle -->
+  <!-- ============================================================== -->
+  <div class="page-breadcrumb">
+      <div class="row">
+          <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">Elements</h4>
+              <div class="ms-auto text-end">
+                  <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Library</li>
+                      </ol>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Bread crumb and right sidebar toggle -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Container fluid  -->
+  <!-- ============================================================== -->
+  <div class="container">
+      <!-- ============================================================== -->
+      <!-- Start Page Content -->
+      <!-- ============================================================== -->
+      <div class="row">
+
+
+        <div class="col-md-8">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title mb-0">Form Elements</h5>
+                  <div class="form-group mt-3">
+                      <label>First Name <small class="text-muted"></small></label>
+                      <input type="text" [(ngModel)]="first_name" class="form-control date-inputmask" id="date-mask"
+                          placeholder="Enter Date">
+                  </div>
+                  <div class="form-group">
+                      <label>Last Name <small class="text-muted"></small></label>
+                      <input type="text" [(ngModel)]="last_name" class="form-control phone-inputmask" id="phone-mask"
+                          placeholder="Enter Phone Number">
+                  </div>
+                  <div class="form-group">
+                      <label>Email <small class="text-muted"></small></label>
+                      <input type="text" [(ngModel)]="email" class="form-control international-inputmask"
+                          id="international-mask" placeholder="International Phone Number">
+                  </div>
+                  <div class="form-group">
+                      <label>Address <small class="text-muted"></small></label>
+                      <input type="text" [(ngModel)]="address" class="form-control xphone-inputmask" id="xphone-mask"
+                          placeholder="Enter Phone Number">
+                  </div>
+                  <div class="form-group">
+                      <label>Phone <small class="text-muted">aaaa 9999-****</small></label>
+                      <input type="text" [(ngModel)]="phone" class="form-control purchase-inputmask" id="purchase-mask"
+                          placeholder="Enter Purchase Order">
+                  </div>
+                  <div class="form-group">
+
+                    <button type="submit"  class="btn btn-primary" id="purchase-mask"
+                        value="submit" (click)="insertdata()">submit</button>
+                </div>
+              </div>
+          </div>
